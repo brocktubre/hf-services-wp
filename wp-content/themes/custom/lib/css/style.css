@@ -1,0 +1,68 @@
+.top-spacer-200{
+    padding-top: 200px;
+}
+.top-spacer-100{
+    padding-top: 100;
+}
+.top-spacer-50{
+    padding-top: 50;
+}
+.top-spacer-25{
+    padding-top: 25;
+}
+
+.bottom-spacer-200{
+    padding-bottom: 200px;
+}
+.bottom-spacer-100{
+    padding-bottom: 100;
+}
+.bottom-spacer-50{
+    padding-bottom: 50px;
+}
+.bottom-spacer-25{
+    padding-bottom: 25px;
+}
+
+#social-icons-top a, #social-icons-bottom a{
+	color:#777777;
+    font-family: Futura, Sans-serif;
+}
+
+.fa {
+	padding-right: 10px;
+	padding-left: 5px;
+}
+
+.navbar-nav li{
+	font-size: 20px;
+	padding-right: 0px;
+	font-family: Futura, Sans-serif;
+}
+
+.navbar-fixed-top {
+    min-height: 100px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 100px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+}
+
+.brand{
+    padding-top: 15px;
+}
+
+.intro-background{
+    background: url(../img/road_boys.png);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
