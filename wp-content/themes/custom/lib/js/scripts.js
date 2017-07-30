@@ -1,5 +1,45 @@
 
 jQuery(document).ready(function($){
+	
+	
+	$('.multiple-slider').slick({
+		dots: true,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		responsive: [
+			{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				infinite: true,
+				dots: true
+			}
+			},
+			{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+			},
+			{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		],
+		arrows: true,
+		prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-chevron-left' aria-hidden='true'></i></button>",
+		nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-chevron-right' aria-hidden='true'></i></button>"
+	});
 
 	var setResize = function() { 
 		var width = $(window).width();
@@ -36,7 +76,7 @@ jQuery(document).ready(function($){
     function desktopFunctions(){
 		// DESKTOP //
 		$(window).scrollTop(0);
-		$('#social-icons-top').css('top', '-25px');
+		$('#social-icons-top').css('top', '15px');
 		$('#social-icons-top').show();
 		$('.navbar-fixed-top').css('top', '45px');
 		var offset = $(".navbar").offset().top;
@@ -65,4 +105,44 @@ jQuery(document).ready(function($){
 		
 	}
 
+	$('#home-nav').on('click', function(event) {
+		jumpToSection(this);
+	});
+
+	$('#services-nav').on('click', function(event) {
+		jumpToSection(this);
+	});
+	$('#contact-nav').on('click', function(event) {
+		jumpToSection(this);
+	});
+	$('#aboutus-nav').on('click', function(event) {
+		jumpToSection(this);
+	});
+
+	function jumpToSection(elm){
+		var target = $(elm.getAttribute('href'));
+		if( target.length ) {
+			event.preventDefault();
+			$('html, body').stop().animate({
+				scrollTop: target.offset().top - 150
+			}, 1000);
+		}
+
+		$('#navbar-main > ul > li').removeClass('active');
+		$(elm).parent('li').addClass('active');
+	}
+
+	// function myMap() {
+	// 	var mapOptions = {
+	// 		center: new google.maps.LatLng(51.5, -0.12),
+	// 		zoom: 10,
+	// 		mapTypeId: google.maps.MapTypeId.HYBRID
+	// 	}
+	// 	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+	// }
+
+	
+
 });
+
+
