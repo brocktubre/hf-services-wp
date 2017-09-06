@@ -21,8 +21,8 @@ jQuery(document).ready(function($){
 			{
 			breakpoint: 600,
 			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
+				slidesToShow: 1,
+				slidesToScroll: 1
 			}
 			},
 			{
@@ -76,7 +76,7 @@ jQuery(document).ready(function($){
     function desktopFunctions(){
 		// DESKTOP //
 		$(window).scrollTop(0);
-		$('#social-icons-top').css('top', '15px');
+		$('#social-icons-top').css('top', '-15px');
 		$('#social-icons-top').show();
 		$('.navbar-fixed-top').css('top', '45px');
 		var offset = $(".navbar").offset().top;
@@ -90,6 +90,8 @@ jQuery(document).ready(function($){
 			}
 		});
 
+		$('#navbar-main').addClass('pull-right');
+
 	}
 
 	function mobileFunctions(){
@@ -101,21 +103,22 @@ jQuery(document).ready(function($){
 		$('.add-padding-25').css('padding-top', '25px');
 		$('.add-margin-25').css('margin-top', '25px');
 		$('.navbar.center .navbar-inner').css('text-align', 'left');
+		$('#navbar-main').removeClass('pull-right');
 
 		
 	}
 
-	$('#home-nav').on('click', function(event) {
+	$('.home-nav').on('click', function(event) {
 		jumpToSection(this);
 	});
 
-	$('#services-nav').on('click', function(event) {
+	$('.services-nav').on('click', function(event) {
 		jumpToSection(this);
 	});
-	$('#contact-nav').on('click', function(event) {
+	$('.contact-nav').on('click', function(event) {
 		jumpToSection(this);
 	});
-	$('#aboutus-nav').on('click', function(event) {
+	$('.aboutus-nav').on('click', function(event) {
 		jumpToSection(this);
 	});
 

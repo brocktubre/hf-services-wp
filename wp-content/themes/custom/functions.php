@@ -14,10 +14,13 @@
 			wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/' .'lib/css/style.css', array(), '1.0', 'all');
 			wp_enqueue_style( 'slider', 'https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css');
 			wp_enqueue_style( 'slider-theme', 'https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css');
+			wp_enqueue_style( 'custom-font', 'https://fonts.googleapis.com/css?family=Cabin+Sketch');
+			// <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 
 			wp_register_script( 'jquery', get_template_directory_uri() . '/' .'lib/bower_components/jquery/dist/jquery.js');
 			wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/' .'lib/bower_components/bootstrap/dist/js/bootstrap.js');
 			wp_register_script( 'custom-scripts', get_template_directory_uri() . '/' .'lib/js/scripts.js');
+			
 
 			wp_enqueue_script('jquery');
 			wp_enqueue_script('bootstrap-js');

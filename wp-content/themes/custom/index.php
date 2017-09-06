@@ -1,12 +1,4 @@
 <?php get_header(); ?>
-	<!-- [BEGIN] Social icons -->
- 	<div class="col-md-12" id="social-icons-top">
-		<div class="col-md-12 col-sm-12 col-xs-12 col-md-offset-3">
-			<a href="#"><i class="fa fa-phone-square"></i>318-572-9676</a>
-			<a href="#"><i class="fa fa-envelope-square"></i>info@hfservicesshreveport.com</a>
-		</div>
-	</div>
-	<!-- [BEGIN] Social icons -->
 
 	<!-- [BEGIN] Navbar -->
     <nav class="navbar navbar-default navbar-fixed-top center" id="header">
@@ -21,10 +13,10 @@
         </div>
         <div class="navbar-inner navbar-collapse collapse pull-right" id="navbar-main">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#home-section" id="home-nav">Home</a></li>
-            <li class=""><a href="#services-section" id="services-nav">Services</a></li>
-            <li class=""><a href="#contact-section" id="contact-nav">Contact</a></li>
-            <li class=""><a href="#aboutus-section" id="aboutus-nav">About Us</a></li>
+            <li class="active"><a href="#home-section" class="home-nav">Home</a></li>
+            <li class=""><a href="#services-section" class="services-nav">Services</a></li>
+            <li class=""><a href="#contact-section" class="contact-nav">Contact</a></li>
+            <li class=""><a href="#aboutus-section" class="aboutus-nav">About Us</a></li>
           </ul>
         </div>
       </div>
@@ -35,7 +27,7 @@
 	<div class="container-fluid top-spacer-100 bottom-spacer-100">
 	  <!-- [BEGIN] Intro background image -->
     <!-- [END] Intro background image -->
-    <div class="container-fluid top-spacer-200 intro-background" id="home-section">
+    <div class="container-fluid top-spacer-150 intro-background bottom-spacer-150" id="home-section">
       <div class="container">
         <div class="col-md-6 col-sm-12 col-xs-12 col-md-offset-1">
           <div class="well black-transparent">
@@ -49,7 +41,7 @@
               </div>
               
               <div class="blue-bottom">
-                  <a href="#">Learn More<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                  <a href="#services-section" class="services-nav">Learn More<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
               </div>  
           </div>
         </div>
@@ -64,7 +56,7 @@
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
             voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-            <button class="btn btn-custom-blue">Learn more<i class="fa fa-long-arrow-right"></i></button>
+            <button href="#aboutus-section" class="btn btn-custom-blue aboutus-nav">Learn more<i class="fa fa-long-arrow-right"></i></button>
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12">
               <img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/IMG_0804.JPG" alt="Motorcycles on trailer HF Services" style="border-radius: 7px;">
@@ -110,7 +102,7 @@
             <h1 class="text-center">CONTACT US</h1>
         </div>
         <div class="row top-spacer-50">
-            <div class="col-md-5">
+            <div class="col-md-5 col-sm-12 col-xs-12">
                 <div class="well">
                     <h1> HF SERVICES </h1>
                     <p><i class="fa fa-globe"></i>www.hfservicesshreveport.com</p>
@@ -132,22 +124,22 @@
               <div class="form-area">  
                 <form role="form">
                   <br style="clear:both">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                       <div class="form-group">
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                       </div>
                      </div>
-                     <div class="col-md-6">
+                     <div class="col-md-6 col-sm-6 col-xs-12">
                       <div class="form-group">
                         <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
                       </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
                       <div class="form-group">
                         <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
                       </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
                       <div class="form-group">
                           <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>                   
                         </div>
@@ -188,16 +180,16 @@
     <div class="container top-spacer-100">
       <div class="multiple-slider">
         <div>
-          <img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/IMG_0420.JPG" alt="Motorcycles on trailer HF Services">
+          <img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/IMG_0660.JPG" alt="Motorcycles on trailer HF Services">
         </div>
         <div>
-          <img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/IMG_0421.JPG" alt="Motorcycles on trailer HF Services">
+          <img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/IMG_0751.JPG" alt="Motorcycles on trailer HF Services">
         </div>
         <div>
-          <img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/IMG_0804.JPG" alt="Motorcycles on trailer HF Services">
+          <img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/IMG_0772.JPG" alt="Motorcycles on trailer HF Services">
         </div>
          <div>
-          <img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/IMG_0519.JPG" alt="Motorcycles on trailer HF Services">
+          <img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/IMG_0799.JPG" alt="Motorcycles on trailer HF Services">
         </div>
         <div>
           <img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/lib/img/IMG_0671.JPG" alt="Motorcycles on trailer HF Services">
